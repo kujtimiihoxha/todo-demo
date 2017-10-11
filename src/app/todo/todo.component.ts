@@ -53,7 +53,7 @@ export class TodoComponent implements OnInit {
             inx = i;
           }
         });
-        this.todos[inx].complete = !todo.completed;
+        this.todos[inx].complete = !this.todos[inx].complete;
       }
     });
   }
