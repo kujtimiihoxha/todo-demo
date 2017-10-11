@@ -1,3 +1,4 @@
+> Based on : https://github.com/jvandemo/angular2-todo-app
 # TodoDemo
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.5.
