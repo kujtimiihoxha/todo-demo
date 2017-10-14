@@ -18,7 +18,7 @@ export class TodoComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.todoService.getAllTodos().map(dt => dt.json().todos || []).subscribe(todos => {
+    this.todoService.getAllTodos().map(dt => dt.json().t || []).subscribe(todos => {
       this.todos = todos;
     });
   }
@@ -34,7 +34,7 @@ export class TodoComponent implements OnInit {
       return dt;
     }).subscribe(b => {
       if (b.error == null) {
-        this.newTodo.id = b.todo.id;
+        this.newTodo.id = b.t.id;
         this.todos.push(this.newTodo);
         this.newTodo = new Todo();
       }
